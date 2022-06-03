@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;700&display=swap");
+
+.team-wrapper {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	min-height: calc(100vh - 100px);
+}
+.team-container {
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.team-title {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.define {
+	padding-left: 2rem;
+	padding-right: 2em;
+}
+
+#define-para {
+	color: yellow;
+	background-color: black;
+	min-height: 16rem;
+}
+
+.teamQuote {
+	height: fit-content;
+	margin-bottom: 2rem;
+}
+
+#quote {
+	font-family: "Dancing Script", cursive;
+	font-size: 2rem;
+}
+
+#quoteMark {
+	font-size: 6rem;
+	font-family: "Catamaran", sans-serif;
+}
+
+#quoteBy {
+	font-family: "Dancing Script", cursive;
+	font-size: 2.6rem;
+}
+
+@media only screen and (max-width: 767px) {
+	.teamQuote {
+		padding: 10px;
+	}
+
+	#quote {
+		font-size: 2rem;
+	}
+
+	#quoteBy {
+		font-size: 1.4rem;
+	}
+	#quoteMark {
+		font-size: 3rem;
+	}
+}

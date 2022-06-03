@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+.section {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.section .one {
+	background: linear-gradient(#000, #ffffff);
+	background-color: #ee964b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60vw;
+	height: 100vh;
+}
+
+.section .two {
+	background: linear-gradient(#ee964b, #ffffff);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 40vw;
+	height: 100vh;
+}
+.home-team-img {
+	width: 45vw;
+}
+.contents {
+	width: 30vw;
+	text-align: left;
+	font-family: "Ubuntu", serif;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+.contents.c0 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.button {
+	width: 8.7rem;
+	background-color: #4f4f4f;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	border-radius: 20px;
+	text-decoration: none;
+}
+.button:hover {
+	cursor: pointer;
+	background-color: #363636;
+}
+a,
+a:hover {
+	text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+	.section {
+		margin-left: 0;
+		background-image: linear-gradient(to right, black, orange);
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section .one {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 50vh;
+	}
+
+	.section .two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 50vh;
+	}
+	.contents {
+		width: 90vw;
+		font-size: 1rem;
+	}
+	.home-team-img {
+		width: 95vw;
+	}
+
+	.section .two button {
+		display: none;
+	}
+}

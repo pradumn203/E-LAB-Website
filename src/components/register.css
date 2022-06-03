@@ -1,0 +1,46 @@
+.register-container {
+	min-height: calc(100vh - 100px);
+}
+.input-field {
+	border-radius: 50px;
+	border: 2px solid #535353;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+}
+.input-field > span {
+	padding-right: 10px;
+	font-size: 1.2rem;
+}
+.input {
+	outline: none;
+	border: none;
+	width: 100%;
+	background: transparent;
+	font-size: 1.2rem;
+	font-family: sans-serif;
+}
+::-webkit-input-placeholder {
+	/* Edge */
+	color: #000;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #000;
+}
+
+::placeholder {
+	color: #000;
+}
+.form > div {
+	margin-top: 20px;
+	font-family: sans-serif;
+	font-size: 1rem;
+}
+option:disabled {
+	color: #737373;
+}
+.label {
+	position: fixed;
+}

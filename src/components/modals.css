@@ -1,0 +1,153 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.course-box {
+  background-position: left;
+  background-size: cover;
+  background-size: 120%;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s ease-in;
+  overflow: hidden;
+  position: relative;
+  padding: 6px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.course-box::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.course-box h4 {
+  font-size: 18px;
+  z-index: 3;
+  color: white;
+}
+
+.course-box h4 a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease-in;
+}
+
+.course-box:hover {
+  letter-spacing: 4px;
+  font-size: 6px !important;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: left;
+  }
+
+  50% {
+    background-position: right;
+  }
+
+  100% {
+    background-position: left;
+  }
+}
+
+.course-box:nth-child(1) {
+  background-image: url(../images/ar.jpg);
+}
+
+.course-box:nth-child(2) {
+  background-image: url(../images/web.png);
+}
+
+.course-box:nth-child(3) {
+  background-image: url(../images/java.png);
+}
+
+.course-box:nth-child(4) {
+  background-image: url(../images/android.jpg);
+}
+
+.course-box:nth-child(5) {
+  background-image: url(../images/ml.jpeg);
+}
+
+.course-box:nth-child(6) {
+  background-image: url(../images/networking.jpg);
+}
+
+.course-box:nth-child(7) {
+  background-image: url(../images/iot.png);
+}
+
+.course-box:nth-child(8) {
+  background-image: url(../images/es.jpg);
+}
+
+/* .wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.one {
+  background-color: orange;
+  color: white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 8rem;
+  position: relative;
+}
+
+.two {
+  background-color: white;
+  color: orange;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 8rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .content>.txt {
+    height: auto;
+    text-align: justify;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 2.4rem;
+  }
+
+  .one {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  .two {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+} */
